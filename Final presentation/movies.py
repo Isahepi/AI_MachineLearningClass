@@ -1,7 +1,11 @@
+from pathlib import Path
+
 import pandas as pd
 
-# Load the movies metadata
-movies_metadata = pd.read_csv("movies_metadata.csv", low_memory=False)
+_DIR = Path(__file__).resolve().parent
+
+# Load the movies metadata (paths relative to this file so cwd does not matter)
+movies_metadata = pd.read_csv(_DIR / "movies_metadata.csv", low_memory=False)
 
 # Create a new dataframe with the id, title, genres, and release date
 movies = movies_metadata[['id', 'title', 'genres']]
@@ -15,13 +19,13 @@ movies['id'] = movies['id'].astype(int)
 #print(movies.columns)
 #print(movies.info())
 
-keywords_metadata = pd.read_csv('keywords.csv')
+keywords_metadata = pd.read_csv(_DIR / "keywords.csv")
 # One row per movie id (keywords file can contain duplicate ids)
 keywords_metadata = keywords_metadata.drop_duplicates(subset=["id"], keep="first")
 
 movies_keywords = movies.merge(keywords_metadata, on="id", how="left")
 
-MOVIES_KEYWORDS_CSV = "movies_keywords.csv"
+MOVIES_KEYWORDS_CSV = str(_DIR / "movies_keywords.csv")
 
 
 if __name__ == "__main__":

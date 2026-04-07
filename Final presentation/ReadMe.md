@@ -11,20 +11,19 @@ The main idea of this final project is to explain and re create the filtered bas
 The database used for this project was taken from Kaggel - The Movies Dataset
 
 Different help I had for this project was 
-RESOURCE 1
-RESOURCE 2
-RESOURCE 3
-ChatGPT 
-Cursor
+- RESOURCE 1
+- RESOURCE 2
+- RESOURCE 3
+- ChatGPT 
+- Cursor
 
-## Division of task for Final Project 
-DIVISION OF TASK 
+## Division of task
 
-- Supporting Document and Presentation slides: Grace La Mar & Chidi Emenike (writing overall overview of our topic and creating Power Point slides) 
+- **Supporting Document and Presentation slides:** Grace La Mar & Chidi Emenike (writing overall overview of our topic and creating Power Point slides) 
 
-- GitHub Repository & Finding sources: Chidi Emenike  
+- **GitHub Repository & Finding sources:** Chidi Emenike  
 
-- Code exercise & Researching algorithm: Isabella Herrera  
+- **Code exercise & Researching algorithm:** Isabella Herrera  
 
 ### Deliverables:  
 1. Introduction to topic- Chidi is introducing the topic to the class and will give a basic introduction to how AI systems play a huge role in recommendation systems in different streaming platforms like Netflix.  
